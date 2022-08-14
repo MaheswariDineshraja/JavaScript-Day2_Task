@@ -1,0 +1,41 @@
+Window Object:
+The Window is the first thing thats get loaded into the browser.This window object has the majority
+of the properties like length, inner height,name, if it has been closed, its parents and more.
+Document Object:
+The document is your html,aspx,php or other document that will be loaded into the browser. The
+document actually gets loaded inside the window object and has properties available to it like title,
+URL, cookie, etc. 
+
+If you want o access a property for the window its is window.property
+If it is document its a window.document.property which is also doecument.property
+
+differences:
+
+document										window
+
+1. represents any HTML document or web            represents a browser window or frame that displays
+pages that is loaded in the browser.              that contents of the webpage.
+
+2. its is loaded inside the window.  			  It is the very first object that loaded in the browser.
+
+3. it is the object of window property.			  its is the object of the browser
+
+4. all the tags, elements with attributes in	  global objects, functions, and variables of javascript
+HTML are part of the document.					  are members of the window object.
+
+5. can access the document from a window using    can access the window from a window only using
+the window.document	                              the window.window
+
+6. document is part OF BOM(Browser Object Model)  window is part of BOM, not DOM
+and DOM (Document Object Model)
+
+7. 	Properties of document objects such as title, Properties of the window object cannot be
+body, cookies, etc can also be accessed by a      accessed by the document object.
+window like this window. document.title	
+
+8. syntax:										  syntax:
+      document.propertyname;							window.propertyname;
+	  example											example:
+	  document.title :  will return the title    		window.innerHeight : will return the 
+	  of the document									height of the content area of the browser
+          
